@@ -1,4 +1,4 @@
-('C:\\python_pjt\\build\\gui\\PYZ-00.pyz',
+('C:\\pyPRJ\\BookSearcher\\build\\gui\\PYZ-00.pyz',
  [('OpenSSL',
    'C:\\Python311\\Lib\\site-packages\\OpenSSL\\__init__.py',
    'PYMODULE'),
@@ -899,6 +899,6 @@
   ('xmlrpc.client', 'C:\\Python311\\Lib\\xmlrpc\\client.py', 'PYMODULE'),
   ('zipfile', 'C:\\Python311\\Lib\\zipfile.py', 'PYMODULE'),
   ('zipimport', 'C:\\Python311\\Lib\\zipimport.py', 'PYMODULE'),
-  ('경기도사이버도서관책목록', 'C:\\python_pjt\\경기도사이버도서관책목록.py', 'PYMODULE'),
-  ('김포도서관책목록', 'C:\\python_pjt\\김포도서관책목록.py', 'PYMODULE'),
-  ('책검색', 'C:\\python_pjt\\책검색.py', 'PYMODULE')])
+  ('경기도사이버도서관책목록', 'C:\\pyPRJ\\BookSearcher\\경기도사이버도서관책목록.py', 'PYMODULE'),
+  ('김포도서관책목록', 'C:\\pyPRJ\\BookSearcher\\김포도서관책목록.py', 'PYMODULE'),
+  ('책검색', 'C:\\pyPRJ\\BookSearcher\\책검색.py', 'PYMODULE')])
