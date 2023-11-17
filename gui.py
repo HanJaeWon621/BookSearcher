@@ -53,6 +53,8 @@ def main():
         
         print("사용자 입력:", srch_text)
         label3.setText(srch_result)
+    # 엔터 키에 대한 이벤트 핸들러 등록
+    label.returnPressed.connect(searchBook)
     button3.clicked.connect(searchBook)
     list_widget = QListWidget()
     list_widget2 = QListWidget()
@@ -76,7 +78,19 @@ def main():
       elif key=='A5':
         C = GET_CATE_DTL_DIC(key)
         flag='b1'
+      elif key=='A7':
+        C = GET_CATE_DTL_DIC(key)
+        flag='b1'
       elif key=='A8':
+        C = GET_CATE_DTL_DIC(key)
+        flag='b1'
+      elif key=='AF':
+        C = GET_CATE_DTL_DIC(key)
+        flag='b1'
+      elif key=='A9':
+        C = GET_CATE_DTL_DIC(key)
+        flag='b1'
+      elif key=='AA':
         C = GET_CATE_DTL_DIC(key)
         flag='b1'
       else:

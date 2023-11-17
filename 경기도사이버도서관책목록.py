@@ -61,7 +61,8 @@ def SRCH_CATE_MID_LIST(search_term):
     matching_items = {}
 
     for key in MID_CATE.keys():
-        if search_term in key:
+        if key.startswith(search_term):
+        #if search_term in key:
             matching_items[key] = MID_CATE[key]
 
     # 검색 결과 출력

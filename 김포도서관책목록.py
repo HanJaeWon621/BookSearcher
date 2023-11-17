@@ -8,7 +8,11 @@ CATE={'A1':'문학',
       'A2':'에세이/산문',
       'A4':'인문',
       'A5':'역사',
-      'A8':'경제/비즈니스 전체'
+      'A7':'사회',
+      'A8':'경제/비즈니스 전체',
+      'AF':'취미/여행',
+      'A9':'자연/과학',
+      'AA':'컴퓨터/인터넷'
 }
 A1_CATE={
     '01':'한국소설',
@@ -40,6 +44,14 @@ A5_CATE={
     '04':'인물이야기',
     '05':'지리'
     }
+A7_CATE={
+    '01':'사회과학산책',
+    '02':'사회학이해',
+    '03':'정치/외교',
+    '04':'여성/남성',
+    '05':'법률/행정/복지',
+    '06':'교육/환경',
+    '07':'언론/미디어'}
     #A8 경제/비즈니스 전체
 A8_CATE={
     '01':'경제/경영',
@@ -51,7 +63,25 @@ A8_CATE={
     '07':'창업/취업',
     '08':'기업실무관리',
     '09':'리포트'}
-
+AF_CATE={
+    '01':'여행/관광',
+    '02':'스포츠',
+    '03':'취미서',
+    '04':'운세/해몽',
+    '05':'기타'
+    }
+A9_CATE={
+    '01':'과학산책',
+    '02':'수학/물리',
+    '03':'화학/생명',
+    '04':'지구/천문'
+    }
+AA_CATE={
+    '01':'컴퓨터입문/활용',
+    '02':'인터넷/홈페이지',
+    '03':'멀티미디어/게임/그래픽',
+    '04':'프로그래밍'
+    }
 def GET_CATE_NM(category, middlecategory):
     return_str=''
     if category =='A1':
@@ -62,8 +92,16 @@ def GET_CATE_NM(category, middlecategory):
         return_str = A4_CATE[middlecategory]
     elif category =='A5':
         return_str = A5_CATE[middlecategory]
+    elif category =='A7':
+        return_str = A7_CATE[middlecategory]
     elif category =='A8':
         return_str = A8_CATE[middlecategory]
+    elif category =='AF':
+        return_str = AF_CATE[middlecategory]
+    elif category =='A9':
+        return_str = A9_CATE[middlecategory]
+    elif category =='AA':
+        return_str = AA_CATE[middlecategory]
 
     return return_str
 
@@ -77,8 +115,16 @@ def GET_CATE_DTL_DIC(category):
         return A4_CATE
     elif category =='A5':
         return A5_CATE
+    elif category =='A7':
+        return A7_CATE
     elif category =='A8':
         return A8_CATE
+    elif category =='AF':
+        return AF_CATE
+    elif category =='A9':
+        return A9_CATE
+    elif category =='AA':
+        return AA_CATE
 
 def getBookListCrawl(category_code, middlecategory):
 # 크롤링할 웹 페이지의 URL 설정
